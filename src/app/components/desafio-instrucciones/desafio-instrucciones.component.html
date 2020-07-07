@@ -1,0 +1,35 @@
+<h1>
+  Desafío
+  <button class="helper" type="button" (click)="toggleShowDesafio()">
+    {{ showDesafio ? 'Ocultar' : 'mostrar' }}
+  </button>
+</h1>
+
+<div *ngIf="showDesafio">
+  <h2>Parte 1</h2>
+  <p>
+    <strong>Objetivo:</strong> importar los datos del archivo
+    data/menu.json y mostrar el primer nivel de elementos.
+  </p>
+  <h2>Parte 2</h2>
+  <p>
+    <strong>Objetivo:</strong> hacer visible el segundo nivel para
+    aquellos elementos que contengan hijos.
+  </p>
+  <h2>Parte 3</h2>
+  <p>
+    <strong>Objetivo:</strong> hacer las modificaciones necesarias para
+    mostrar <strong>TODOS</strong> los niveles
+  </p>
+  <h2>Bonus</h2>
+  <ol>
+    <li>
+      Hacer que los items <strong>con</strong> hijos muestren u oculten
+      a sus descendientes al hacer click.
+    </li>
+    <li>
+      Hacer que los items <strong>sin</strong> hijos se muestren como
+      links usando la ruta completa desde la raiz.
+    </li>
+  </ol>
+</div>
